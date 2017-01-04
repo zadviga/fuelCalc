@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.zen.p0301_activityresult.MileageActivity">
+
+    <TextView
+        android:text="Расчёт расхода топлива"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Заправлено литров"
+        android:id="@+id/refillPetrolLiter"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/enterPetrolKm" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:id="@+id/enteRrefillPetrolLiter"
+
+        android:layout_alignBottom="@+id/refillPetrolLiter"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/refillPetrolLiter"
+        android:layout_toRightOf="@+id/refillPetrolLiter" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Пройденный километраж"
+        android:id="@+id/tripDistance"
+        android:layout_marginTop="49dp"
+        android:layout_below="@+id/enteRrefillPetrolLiter" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:id="@+id/enterTripDistance"
+
+        android:layout_alignBottom="@+id/tripDistance"
+        android:layout_alignRight="@+id/enteRrefillPetrolLiter"
+        android:layout_alignEnd="@+id/enteRrefillPetrolLiter"
+        android:layout_toRightOf="@+id/tripDistance"
+        android:layout_toEndOf="@+id/tripDistance" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="?android:attr/borderlessButtonStyle"
+        android:text="Посчитать"
+        android:id="@+id/calculateFlowButton"
+
+        android:layout_below="@+id/enterTripDistance"
+        android:layout_marginTop="34dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="?android:attr/borderlessButtonStyle"
+        android:text="Очистить поля"
+        android:id="@+id/clearFlowFields"
+        android:layout_alignTop="@+id/calculateFlowButton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="         "
+        android:id="@+id/resultFlowArea"
+
+
+        android:textSize="27dp"
+
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/clearFlowFields"
+        android:layout_alignEnd="@+id/clearFlowFields"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>

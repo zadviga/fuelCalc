@@ -1,0 +1,109 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.zen.p0301_activityresult.CoastActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Расход л/100км"
+        android:id="@+id/petrolKm"
+        android:layout_above="@+id/coastLiter" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:id="@+id/enterPetrolKm"
+
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/coastLiter"
+        android:layout_toEndOf="@+id/coastLiter"
+        android:layout_alignRight="@+id/clearFields"
+        android:layout_alignEnd="@+id/clearFields" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Стоимость за литр"
+        android:id="@+id/coastLiter"
+        android:layout_marginTop="34dp"
+        android:layout_below="@+id/enterPetrolKm" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:id="@+id/enterCoastLiter"
+
+        android:layout_alignBottom="@+id/coastLiter"
+        android:layout_alignRight="@+id/clearFields"
+        android:layout_alignEnd="@+id/clearFields"
+        android:layout_toRightOf="@+id/coastLiter"
+        android:layout_toEndOf="@+id/coastLiter" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Расстояние (км)"
+        android:id="@+id/distance"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/enterCoastLiter" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:id="@+id/enterDistance"
+
+        android:layout_alignBottom="@+id/distance"
+        android:layout_alignRight="@+id/clearFields"
+        android:layout_alignEnd="@+id/clearFields"
+        android:layout_alignLeft="@+id/enterCoastLiter"
+        android:layout_alignStart="@+id/enterCoastLiter" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="?android:attr/borderlessButtonStyle"
+        android:text="Посчитать"
+        android:id="@+id/calculateButton"
+
+        android:layout_below="@+id/enterDistance"
+        android:layout_marginTop="34dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="         "
+        android:id="@+id/resultView"
+
+        android:textSize="27dp"
+        android:layout_below="@+id/calculateButton"
+
+        android:layout_marginTop="37dp"
+        android:layout_alignRight="@+id/clearFields"
+        android:layout_alignEnd="@+id/clearFields"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="?android:attr/borderlessButtonStyle"
+        android:text="Очистить поля"
+        android:id="@+id/clearFields"
+        android:layout_alignTop="@+id/calculateButton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

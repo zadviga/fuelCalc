@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Калькулятор топлива</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_coast">расчет стоимости поездки</string>
+    <string name="title_activity_about">о программе</string>
+    <string name="title_activity_mileage">расчет расхода л/100км</string>
+    <string name="aboutString">Калькулятор расходов на топливо 2014     v 0.35</string>
+
+</resources>
