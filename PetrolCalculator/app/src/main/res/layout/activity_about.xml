@@ -19,7 +19,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Калькулятор расходов на топливо 2014     v 0.35"
+        android:text="Калькулятор расходов на топливо     v 0.35"
         android:id="@+id/textView"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
